@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+
+  "name": "Twitch english",
+  "description": "only english pls",
+  "version": "1.0",
+
+  "permissions": [
+   "activeTab"
+   ],
+
+  "content_scripts": [
+      {
+          "matches": ["*://*.twitch.tv/*"],
+          "js": ["index.js"]
+      }
+  ]
+
+}
